@@ -3687,7 +3687,7 @@
   "paint_line": {
     "line-opacity": {
       "type": "number",
-      "doc": "The opacity at which the line will be drawn.",
+      "doc": "将被绘制出的线条的不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -3718,7 +3718,7 @@
     },
     "line-color": {
       "type": "color",
-      "doc": "The color with which the line will be drawn.",
+      "doc": "将被绘制出的线条的颜色。",
       "default": "#000000",
       "transition": true,
       "requires": [
@@ -3760,7 +3760,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "The geometry's offset. Values are [x, y] where negatives indicate left and up, respectively.",
+      "doc": "几何偏移量[x，y]，其中负数分别表示左和上。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3782,13 +3782,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The line is translated relative to the map."
+          "doc": "该线相对于地图进行移动。"
         },
         "viewport": {
-          "doc": "The line is translated relative to the viewport."
+          "doc": "该线相对于视口进行移动。"
         }
       },
-      "doc": "Controls the frame of reference for `line-translate`.",
+      "doc": "控制`line-translate`的参考框架。",
       "default": "map",
       "requires": [
         "line-translate"
@@ -3816,7 +3816,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Stroke thickness.",
+      "doc": "笔触宽度。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3845,7 +3845,7 @@
       "type": "number",
       "default": 0,
       "minimum": 0,
-      "doc": "Draws a line casing outside of a line's actual path. Value indicates the width of the inner gap.",
+      "doc": "在线的实际路径之外绘制线框。值表示内部间隙的宽度。",
       "transition": true,
       "units": "pixels",
       "sdk-support": {
@@ -3875,7 +3875,7 @@
     "line-offset": {
       "type": "number",
       "default": 0,
-      "doc": "The line's offset. For linear features, a positive value offsets the line to the right, relative to the direction of the line, and a negative value to the left. For polygon features, a positive value results in an inset, and a negative value results in an outset.",
+      "doc": "线的偏移量。 对于线性要素，正值将相对于线方向向右偏移，负值表示向左偏移。 对于面要素，正值会导致向内缩小，负值会导致向外扩大。",
       "transition": true,
       "units": "pixels",
       "sdk-support": {
@@ -3908,7 +3908,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Blur applied to the line, in pixels.",
+      "doc": "模糊效果以像素为单位应用于线条。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3936,7 +3936,7 @@
     "line-dasharray": {
       "type": "array",
       "value": "number",
-      "doc": "Specifies the lengths of the alternating dashes and gaps that form the dash pattern. The lengths are later scaled by the line width. To convert a dash length to pixels, multiply the length by the current line width. Note that GeoJSON sources with `lineMetrics: true` specified won't render dashed lines to the expected scale. Also note that zoom-dependent expressions will be evaluated only at integer zoom levels.",
+      "doc": "指定形成虚线图案的交替破折号和间隙的长度。线长将根据线宽按比例缩放。要将短划线长度转换为像素，请将长度乘以当前线宽。请注意，指定了`lineMetrics：true`的GeoJSON源不会将虚线渲染到预期的比例。同时，仅在整数缩放级别下才会评估与缩放相关的表达式。",
       "minimum": 0,
       "transition": true,
       "units": "line widths",
@@ -3965,7 +3965,7 @@
     "line-pattern": {
       "type": "string",
       "transition": true,
-      "doc": "Name of image in sprite to use for drawing image lines. For seamless patterns, image width must be a factor of two (2, 4, 8, ..., 512). Note that zoom-dependent expressions will be evaluated only at integer zoom levels.",
+      "doc": "用于绘制图像线的子图像名称。 对于无缝模式，图像宽度必须是2的指数（2,4,8,...,512）。请注意，仅在整数缩放级别下才会评估与缩放相关的表达式。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3985,7 +3985,7 @@
     },
     "line-gradient": {
       "type": "color",
-      "doc": "Defines a gradient with which to color a line feature. Can only be used with GeoJSON sources that specify `\"lineMetrics\": true`.",
+      "doc": "定义用于为线要素着色的渐变。 只能与指定`\"lineMetrics\": true`的GeoJSON源一起使用。",
       "transition": false,
       "requires": [
         {
@@ -4023,7 +4023,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Circle radius.",
+      "doc": "圆的半径。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -4051,7 +4051,7 @@
     "circle-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The fill color of the circle.",
+      "doc": "圆填充的颜色。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -4080,7 +4080,7 @@
     "circle-blur": {
       "type": "number",
       "default": 0,
-      "doc": "Amount to blur the circle. 1 blurs the circle such that only the centerpoint is full opacity.",
+      "doc": "圆圈的模糊数量。将值设为1，使得只有中心点是完全不透明的。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -4108,7 +4108,7 @@
     },
     "circle-opacity": {
       "type": "number",
-      "doc": "The opacity at which the circle will be drawn.",
+      "doc": "将被绘制的圆的不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -4147,7 +4147,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "The geometry's offset. Values are [x, y] where negatives indicate left and up, respectively.",
+      "doc": "几何偏移量[x，y]，其中负数分别表示左和上。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -4169,13 +4169,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The circle is translated relative to the map."
+          "doc": "该线相对于地图进行移动。"
         },
         "viewport": {
-          "doc": "The circle is translated relative to the viewport."
+          "doc": "该线相对于视口进行移动。"
         }
       },
-      "doc": "Controls the frame of reference for `circle-translate`.",
+      "doc": "控制`circle-translate`的参考框架。",
       "default": "map",
       "requires": [
         "circle-translate"
@@ -4201,14 +4201,14 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "Circles are scaled according to their apparent distance to the camera."
+          "doc": "圆根据它们到相机平面的视在距离被缩放。"
         },
         "viewport": {
-          "doc": "Circles are not scaled."
+          "doc": "圆不被缩放."
         }
       },
       "default": "map",
-      "doc": "Controls the scaling behavior of the circle when the map is pitched.",
+      "doc": "当地图倾斜时控制圆的缩放。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.21.0",
@@ -4230,14 +4230,14 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The circle is aligned to the plane of the map."
+          "doc": "圆与地图的平面对齐。"
         },
         "viewport": {
-          "doc": "The circle is aligned to the plane of the viewport."
+          "doc": "圆与视口的平面对齐。"
         }
       },
       "default": "viewport",
-      "doc": "Orientation of circle when map is pitched.",
+      "doc": "当地图倾斜是圆的方向。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.39.0",
@@ -4261,7 +4261,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "The width of the circle's stroke. Strokes are placed outside of the `circle-radius`.",
+      "doc": "圆形笔触的宽度。笔触位于`circle-radius`之外。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.29.0",
@@ -4289,7 +4289,7 @@
     "circle-stroke-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The stroke color of the circle.",
+      "doc": "圆形笔触的颜色。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -4317,7 +4317,7 @@
     },
     "circle-stroke-opacity": {
       "type": "number",
-      "doc": "The opacity of the circle's stroke.",
+      "doc": "圆形笔触的不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -4354,7 +4354,7 @@
       "minimum": 1,
       "transition": true,
       "units": "pixels",
-      "doc": "Radius of influence of one heatmap point in pixels. Increasing the value makes the heatmap smoother, but less detailed.",
+      "doc": "一个热图点的影响半径，以像素为单位。增加该值可使热图更平滑，但会损失些细节。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.41.0",
@@ -4384,7 +4384,7 @@
       "default": 1,
       "minimum": 0,
       "transition": false,
-      "doc": "A measure of how much an individual point contributes to the heatmap. A value of 10 would be equivalent to having 10 points of weight 1 in the same spot. Especially useful when combined with clustering.",
+      "doc": "衡量单个点对热图的贡献程度。10相当于在同一地点具有权重为1的10个点。尤其与聚类结合使用时特别有用。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.41.0",
@@ -4414,7 +4414,7 @@
       "default": 1,
       "minimum": 0,
       "transition": true,
-      "doc": "Similar to `heatmap-weight` but controls the intensity of the heatmap globally. Primarily used for adjusting the heatmap based on zoom level.",
+      "doc": "类似于`heatmap-weight`，但它全局控制热力图的强度。主要用于根据缩放级别调整热力图。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.41.0",
@@ -4455,7 +4455,7 @@
         1,
         "red"
       ],
-      "doc": "Defines the color of each pixel based on its density value in a heatmap.  Should be an expression that uses `[\"heatmap-density\"]` as input.",
+      "doc": "根据热力图中的密度值定义每个像素的颜色。应使用[\"heatmap-density\"]`作为输入的表达式。",
       "transition": false,
       "sdk-support": {
         "basic functionality": {
@@ -4476,7 +4476,7 @@
     },
     "heatmap-opacity": {
       "type": "number",
-      "doc": "The global opacity at which the heatmap layer will be drawn.",
+      "doc": "绘制的热力图图层的全局不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
