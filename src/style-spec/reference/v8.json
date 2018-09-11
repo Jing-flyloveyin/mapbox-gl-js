@@ -4501,7 +4501,7 @@
   },
   "paint_symbol": {
     "icon-opacity": {
-      "doc": "The opacity at which the icon will be drawn.",
+      "doc": "将绘制的图标的不透明度。",
       "type": "number",
       "default": 1,
       "minimum": 0,
@@ -4538,7 +4538,7 @@
       "type": "color",
       "default": "#000000",
       "transition": true,
-      "doc": "The color of the icon. This can only be used with sdf icons.",
+      "doc": "图标的颜色。这只能用于sdf图标。",
       "requires": [
         "icon-image"
       ],
@@ -4570,7 +4570,7 @@
       "type": "color",
       "default": "rgba(0, 0, 0, 0)",
       "transition": true,
-      "doc": "The color of the icon's halo. Icon halos can only be used with SDF icons.",
+      "doc": "图标光晕的颜色。图标光晕只能与SDF图标一起使用。",
       "requires": [
         "icon-image"
       ],
@@ -4604,7 +4604,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Distance of halo to the icon outline.",
+      "doc": "光晕到图标轮廓之间的距离。",
       "requires": [
         "icon-image"
       ],
@@ -4638,7 +4638,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Fade out the halo towards the outside.",
+      "doc": "光晕渐渐淡出到外面的距离。",
       "requires": [
         "icon-image"
       ],
@@ -4676,7 +4676,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "Distance that the icon's anchor is moved from its original placement. Positive values indicate right and down, while negative values indicate left and up.",
+      "doc": "图标从原始位置移动到锚点的距离。正数值表示向右和向下，而负数值表示向左和向上。",
       "requires": [
         "icon-image"
       ],
@@ -4701,13 +4701,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "Icons are translated relative to the map."
+          "doc": "图标相对于地图平移。"
         },
         "viewport": {
-          "doc": "Icons are translated relative to the viewport."
+          "doc": "图标相对于活动视图平移。"
         }
       },
-      "doc": "Controls the frame of reference for `icon-translate`.",
+      "doc": "控制`icon-translate`的参考框架。",
       "default": "map",
       "requires": [
         "icon-image",
@@ -4732,7 +4732,7 @@
     },
     "text-opacity": {
       "type": "number",
-      "doc": "The opacity at which the text will be drawn.",
+      "doc": "将绘制的文本的不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -4766,7 +4766,7 @@
     },
     "text-color": {
       "type": "color",
-      "doc": "The color with which the text will be drawn.",
+      "doc": "将绘制的文本的颜色。",
       "default": "#000000",
       "transition": true,
       "requires": [
@@ -4800,7 +4800,7 @@
       "type": "color",
       "default": "rgba(0, 0, 0, 0)",
       "transition": true,
-      "doc": "The color of the text's halo, which helps it stand out from backgrounds.",
+      "doc": "文本光晕的颜色，有利于文本在背景中突显出来。",
       "requires": [
         "text-field"
       ],
@@ -4834,7 +4834,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "Distance of halo to the font outline. Max text halo width is 1/4 of the font-size.",
+      "doc": "光晕到字体轮廓之间的距离。最大文本光晕宽度为1/4字体大小。",
       "requires": [
         "text-field"
       ],
@@ -4868,7 +4868,7 @@
       "minimum": 0,
       "transition": true,
       "units": "pixels",
-      "doc": "The halo's fadeout distance towards the outside.",
+      "doc": "光晕渐渐淡出到外面的距离。",
       "requires": [
         "text-field"
       ],
@@ -4906,7 +4906,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "Distance that the text's anchor is moved from its original placement. Positive values indicate right and down, while negative values indicate left and up.",
+      "doc": "文本从原始位置移动到锚点的距离。正数值表示向右和向下，而负数值表示向左和向上。",
       "requires": [
         "text-field"
       ],
@@ -4931,13 +4931,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The text is translated relative to the map."
+          "doc": "文本相对于地图平移。"
         },
         "viewport": {
-          "doc": "The text is translated relative to the viewport."
+          "doc": "文本相对于活动视图平移。"
         }
       },
-      "doc": "Controls the frame of reference for `text-translate`.",
+      "doc": "控制`text-translate`的参考框架。",
       "default": "map",
       "requires": [
         "text-field",
@@ -4964,7 +4964,7 @@
   "paint_raster": {
     "raster-opacity": {
       "type": "number",
-      "doc": "The opacity at which the image will be drawn.",
+      "doc": "将绘制的图像的不透明度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -4992,7 +4992,7 @@
       "period": 360,
       "transition": true,
       "units": "degrees",
-      "doc": "Rotates hues around the color wheel.",
+      "doc": "色轮周围的旋转色调。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -5012,7 +5012,7 @@
     },
     "raster-brightness-min": {
       "type": "number",
-      "doc": "Increase or reduce the brightness of the image. The value is the minimum brightness.",
+      "doc": "增加或减少图像的亮度。这个值是最小亮度。",
       "default": 0,
       "minimum": 0,
       "maximum": 1,
@@ -5036,7 +5036,7 @@
     },
     "raster-brightness-max": {
       "type": "number",
-      "doc": "Increase or reduce the brightness of the image. The value is the maximum brightness.",
+      "doc": "增加或减少图像的亮度。这个值是最大亮度。",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -5060,7 +5060,7 @@
     },
     "raster-saturation": {
       "type": "number",
-      "doc": "Increase or reduce the saturation of the image.",
+      "doc": "增加或减少图像的饱和度。",
       "default": 0,
       "minimum": -1,
       "maximum": 1,
@@ -5084,7 +5084,7 @@
     },
     "raster-contrast": {
       "type": "number",
-      "doc": "Increase or reduce the contrast of the image.",
+      "doc": "增加或减少图像的对比度。",
       "default": 0,
       "minimum": -1,
       "maximum": 1,
@@ -5108,13 +5108,13 @@
     },
     "raster-resampling": {
       "type": "enum",
-      "doc": "The resampling/interpolation method to use for overscaling, also known as texture magnification filter",
+      "doc": "用于大比例缩放的重采样或插值方式，也称之为纹理放大滤波器。",
       "values": {
         "linear": {
-          "doc": "(Bi)linear filtering interpolates pixel values using the weighted average of the four closest original source pixels creating a smooth but blurry look when overscaled"
+          "doc": "(Bi)线性滤波使用四个最接近的原始源像素的加权平均值来插值，从而在大比例缩放时表现为平滑而模糊的样子。"
         },
         "nearest": {
-          "doc": "Nearest neighbor filtering interpolates pixel values using the nearest original source pixel creating a sharp but pixelated look when overscaled"
+          "doc": "最近邻滤波使用最近的原始源像素来插值，从而在大比例缩放时表现为清晰而像素化的样子。"
         }
       },
       "default": "linear",
@@ -5141,7 +5141,7 @@
       "minimum": 0,
       "transition": false,
       "units": "milliseconds",
-      "doc": "Fade duration when a new tile is added.",
+      "doc": "当添加一个新的切片时淡入的持续时间",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -5166,7 +5166,7 @@
       "default": 335,
       "minimum": 0,
       "maximum": 359,
-      "doc": "The direction of the light source used to generate the hillshading with 0 as the top of the viewport if `hillshade-illumination-anchor` is set to `viewport` and due north if `hillshade-illumination-anchor` is set to `map`.",
+      "doc": "用于生成山体阴影的光源方向，如果`hillshade-illumination-anchor`设置为`viewport`，则活动视图的顶部位置的光源方向为0，如果`hillshade-illumination-anchor`设置为`map`，则为正北向。",
       "transition": false,
       "sdk-support": {
         "basic functionality": {
@@ -5189,14 +5189,14 @@
       "type": "enum",
       "values": {
         "map": {
-            "doc": "The hillshade illumination is relative to the north direction."
+            "doc": "山体阴影的光照是相对于北方向"
         },
         "viewport": {
-            "doc": "The hillshade illumination is relative to the top of the viewport."
+            "doc": "山体阴影的光照是相对于活动视图的顶部。"
         }
       },
       "default": "viewport",
-      "doc": "Direction of light source when map is rotated.",
+      "doc": "当旋转地图时光源的方向。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.43.0",
@@ -5216,7 +5216,7 @@
     },
     "hillshade-exaggeration": {
       "type": "number",
-      "doc": "Intensity of the hillshade",
+      "doc": "山体阴影的强度",
       "default": 0.5,
       "minimum": 0,
       "maximum": 1,
@@ -5241,7 +5241,7 @@
     "hillshade-shadow-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The shading color of areas that face away from the light source.",
+      "doc": "背向光源的区域的阴影颜色。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -5263,7 +5263,7 @@
     "hillshade-highlight-color": {
       "type": "color",
       "default": "#FFFFFF",
-      "doc": "The shading color of areas that faces towards the light source.",
+      "doc": "面向光源的区域的阴影颜色。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -5285,7 +5285,7 @@
     "hillshade-accent-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The shading color used to accentuate rugged terrain like sharp cliffs and gorges.",
+      "doc": "用于突出陡峭的悬崖和峡谷等崎岖地形的阴影颜色。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -5309,7 +5309,7 @@
     "background-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The color with which the background will be drawn.",
+      "doc": "将绘制的背景的颜色。",
       "transition": true,
       "requires": [
         {
@@ -5335,7 +5335,7 @@
     "background-pattern": {
       "type": "string",
       "transition": true,
-      "doc": "Name of image in sprite to use for drawing an image background. For seamless patterns, image width and height must be a factor of two (2, 4, 8, ..., 512). Note that zoom-dependent expressions will be evaluated only at integer zoom levels.",
+      "doc": "在图像精灵中用于绘制图像背景的图像名称。对于无缝模式，图像宽度和高度必须是2的成倍（2,4,8，...，512）。需要注意的是，只有在整数缩放级别下缩放相关的表达式才会被计算。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -5357,7 +5357,7 @@
       "default": 1,
       "minimum": 0,
       "maximum": 1,
-      "doc": "The opacity at which the background will be drawn.",
+      "doc": "将绘制的背景的不透明度。",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -5382,40 +5382,40 @@
       "default": 300,
       "minimum": 0,
       "units": "milliseconds",
-      "doc": "Time allotted for transitions to complete."
+      "doc": "完成变换动画所分配的时间。"
     },
     "delay": {
       "type": "number",
       "default": 0,
       "minimum": 0,
       "units": "milliseconds",
-      "doc": "Length of time before a transition begins."
+      "doc": "距离变换开始之前的延迟时间。"
     }
   },
   "property-type": {
     "data-driven": {
       "type": "property-type",
-      "doc": "Property is interpolable and can be represented using a property expression."
+      "doc": "属性是可插值的，且可以使用属性表达式进行表示。"
     },
     "cross-faded": {
       "type": "property-type",
-      "doc": "Property is non-interpolable; rather, its values will be cross-faded to smoothly transition between integer zooms."
+      "doc": "属性是不可插值的;然而，它的值将交叉淡入，以便在缩放级别之间平滑变换。"
     },
     "cross-faded-data-driven": {
       "type": "property-type",
-      "doc": "Property is non-interpolable; rather, its values will be cross-faded to smoothly transition between integer zooms. It can be represented using a property expression."
+      "doc": "属性是不可插值的;然而，它的值将交叉淡入，以便在缩放级别之间平滑变换。它可以使用属性表达式进行表示。"
     },
     "color-ramp": {
       "type": "property-type",
-      "doc": "Property should be specified using a color ramp from which the output color can be sampled based on a property calculation."
+      "doc": "属性必须使用一个颜色梯度来指定，输出的颜色可以根据性能计算从该颜色梯度中进行采样。"
     },
     "data-constant": {
       "type": "property-type",
-      "doc": "Property is interpolable but cannot be represented using a property expression."
+      "doc": "属性是可插值的，但不可以使用属性表达式进行表示。"
     },
     "constant": {
       "type": "property-type",
-      "doc": "Property is constant across all zoom levels and property values."
+      "doc": "所有缩放级别及属性值的属性是常量的。"
     }
   }
 }
