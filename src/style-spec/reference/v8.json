@@ -2701,7 +2701,7 @@
         "group": "Heatmap"
       },
       "+": {
-        "doc": "Returns the sum of the inputs.",
+        "doc": "返回所有传入项值的和.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2713,7 +2713,7 @@
         }
       },
       "*": {
-        "doc": "Returns the product of the inputs.",
+        "doc": "返回所有传入项值相乘的积.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2725,7 +2725,7 @@
         }
       },
       "-": {
-        "doc": "For two inputs, returns the result of subtracting the second input from the first. For a single input, returns the result of subtracting it from 0.",
+        "doc": "若传入两个值,则返回第一个输入值减去第二个输入值的差. 若只传入一个值,则返回此项减去0的差.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2737,7 +2737,7 @@
         }
       },
       "/": {
-        "doc": "Returns the result of floating point division of the first input by the second.",
+        "doc": "返回第一个传入值被第二个传入值除得到的浮点数.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2749,7 +2749,7 @@
         }
       },
       "%": {
-        "doc": "Returns the remainder after integer division of the first input by the second.",
+        "doc": "返回第一个传入值被第二个传入值整除得到的余数.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2761,7 +2761,7 @@
         }
       },
       "^": {
-        "doc": "Returns the result of raising the first input to the power specified by the second.",
+        "doc": "返回第一个传入项的指定幂次方值,次方数为第二个传入值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2773,7 +2773,7 @@
         }
       },
       "sqrt": {
-        "doc": "Returns the square root of the input.",
+        "doc": "返回传入项的平方根值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2785,7 +2785,7 @@
         }
       },
       "log10": {
-        "doc": "Returns the base-ten logarithm of the input.",
+        "doc": "返回传入值以10为底数的对数值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2797,7 +2797,7 @@
         }
       },
       "ln": {
-        "doc": "Returns the natural logarithm of the input.",
+        "doc": "返回传入项的自然对数值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2809,7 +2809,7 @@
         }
       },
       "log2": {
-        "doc": "Returns the base-two logarithm of the input.",
+        "doc": "返回传入值以2为底数的对数值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2821,7 +2821,7 @@
         }
       },
       "sin": {
-        "doc": "Returns the sine of the input.",
+        "doc": "返回传入项的正弦值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2833,7 +2833,7 @@
         }
       },
       "cos": {
-        "doc": "Returns the cosine of the input.",
+        "doc": "返回传入项的余弦值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2845,7 +2845,7 @@
         }
       },
       "tan": {
-        "doc": "Returns the tangent of the input.",
+        "doc": "返回传入项的正切值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2857,7 +2857,7 @@
         }
       },
       "asin": {
-        "doc": "Returns the arcsine of the input.",
+        "doc": "返回传入项的反正弦值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2869,7 +2869,7 @@
         }
       },
       "acos": {
-        "doc": "Returns the arccosine of the input.",
+        "doc": "返回传入项的反余弦值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2881,7 +2881,7 @@
         }
       },
       "atan": {
-        "doc": "Returns the arctangent of the input.",
+        "doc": "返回传入项的反正切值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2893,7 +2893,7 @@
         }
       },
       "min": {
-        "doc": "Returns the minimum value of the inputs.",
+        "doc": "返回所有传入项中的最小值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2905,7 +2905,7 @@
         }
       },
       "max": {
-        "doc": "Returns the maximum value of the inputs.",
+        "doc": "返回所有传入项中的最大值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2917,7 +2917,7 @@
         }
       },
       "round": {
-        "doc": "Rounds the input to the nearest integer. Halfway values are rounded away from zero. For example, `[\"round\", -1.5]` evaluates to -2.",
+        "doc": "返回四舍五入约等于传入项的整数. 小数点后的部分会被舍去. 例如, `[\"round\", -1.5]` 得出结果 -2.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2929,7 +2929,7 @@
         }
       },
       "abs": {
-        "doc": "Returns the absolute value of the input.",
+        "doc": "返回传入项的绝对值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2941,7 +2941,7 @@
         }
       },
       "ceil": {
-        "doc": "Returns the smallest integer that is greater than or equal to the input.",
+        "doc": "返回大于或等于传入项的最小整数值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2953,7 +2953,7 @@
         }
       },
       "floor": {
-        "doc": "Returns the largest integer that is less than or equal to the input.",
+        "doc": "返回小于或等于传入项的最大整数值.",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2965,7 +2965,7 @@
         }
       },
       "==": {
-        "doc": "Returns `true` if the input values are equal, `false` otherwise. Equality is strictly typed: values of different types are always considered not equal. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若传入项完全相等,则返回 `true` ,否则返回 `false` . 此相等运算对传入值类型敏感: 类型不同的值永远不会相等. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -2982,7 +2982,7 @@
         }
       },
       "!=": {
-        "doc": "Returns `true` if the input values are not equal, `false` otherwise. Equality is strictly typed: values of different types are always considered not equal. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若传入项不相等,则返回 `true` ,否则返回 `false` . 此相等运算对传入值类型敏感: 类型不同的值永远不会相等. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -2999,7 +2999,7 @@
         }
       },
       ">": {
-        "doc": "Returns `true` if the first input is strictly greater than the second, `false` otherwise. The inputs must be numbers or strings, and both of the same type. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若第一个传入项大于第二个传入项,则返回 `true` ,否则返回 `false` . 传入项类型必须为字符串或数字, 且同时传入的两个项类型须相同. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3016,7 +3016,7 @@
         }
       },
       "<": {
-        "doc": "Returns `true` if the first input is strictly less than the second, `false` otherwise. The inputs must be numbers or strings, and both of the same type. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若第一个传入项小于第二个传入项,则返回 `true` ,否则返回 `false` . 传入项类型必须为字符串或数字, 且同时传入的两个项类型须相同. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3033,7 +3033,7 @@
         }
       },
       ">=": {
-        "doc": "Returns `true` if the first input is greater than or equal to the second, `false` otherwise. The inputs must be numbers or strings, and both of the same type. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若第一个传入项大于或等于第二个传入项,则返回 `true` ,否则返回 `false` . 传入项类型必须为字符串或数字, 且同时传入的两个项类型须相同. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3050,7 +3050,7 @@
         }
       },
       "<=": {
-        "doc": "Returns `true` if the first input is less than or equal to the second, `false` otherwise. The inputs must be numbers or strings, and both of the same type. Accepts an optional `collator` argument to control locale-dependent string comparisons.",
+        "doc": "若第一个传入项小于或等于第二个传入项,则返回 `true` ,否则返回 `false` . 传入项类型必须为字符串或数字, 且同时传入的两个项类型须相同. 可选传 `collator` 参数以控制当前语言环境下的字符串比较.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3067,7 +3067,7 @@
         }
       },
       "all": {
-        "doc": "Returns `true` if all the inputs are `true`, `false` otherwise. The inputs are evaluated in order, and evaluation is short-circuiting: once an input expression evaluates to `false`, the result is `false` and no further input expressions are evaluated.",
+        "doc": "若所有的传入值(或声明)结果都为 `true`,则返回 `true` ,否则 `false` . 传入项在此方法中按顺序执行, 且校验遵循短路原则: 只要其中一个声明验证为 `false`, 则直接返回结果 `false` 且后面的声明不会再被校验.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3079,7 +3079,7 @@
         }
       },
       "any": {
-        "doc": "Returns `true` if any of the inputs are `true`, `false` otherwise. The inputs are evaluated in order, and evaluation is short-circuiting: once an input expression evaluates to `true`, the result is `true` and no further input expressions are evaluated.",
+        "doc": "若任意传入值(或声明)结果为 `true`,则返回 `true` ,否则返回 `false` . 传入项在此方法中按顺序执行, 且校验遵循短路原则: 只要其中一个声明验证为 `true`, 则直接返回结果 `true` 且后面的声明不会再被校验.",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3091,7 +3091,7 @@
         }
       },
       "!": {
-        "doc": "Logical negation. Returns `true` if the input is `false`, and `false` if the input is `true`.",
+        "doc": "逻辑否定. 若传入值结果为 `false` 则返回 `true` ,若传入值结果 `true` 则返回 `false` .",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -3103,11 +3103,11 @@
         }
       },
       "is-supported-script": {
-        "doc": "Returns `true` if the input string is expected to render legibly. Returns `false` if the input string contains sections that cannot be rendered without potential loss of meaning (e.g. Indic scripts that require complex text shaping, or right-to-left scripts if the the `mapbox-gl-rtl-text` plugin is not in use in Mapbox GL JS).",
+        "doc": "若传入的字符串可以被清晰明了地解析,则返回 `true` . 若传入的字符串在解析中包含可能会丢失潜在意义的部分,则返回 `false`  (e.g. 需要特殊字体造型的印度文脚本; 或是在Mapbox GL JS中没有 `mapbox-gl-rtl-text` 插件的情况下, 需要自右向左显示的文字脚本).",
         "group": "String"
       },
       "upcase": {
-        "doc": "Returns the input string converted to uppercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.",
+        "doc": "返回被转换成大写形式的输入项结果. 遵循Unicode默认的大小写转换算法(Unicode Default Case Conversion),在语言环境不敏感的情况下，与Unicode字符数据库保持映射一致.",
         "group": "String",
         "sdk-support": {
           "basic functionality": {
@@ -3119,7 +3119,7 @@
         }
       },
       "downcase": {
-        "doc": "Returns the input string converted to lowercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.",
+        "doc": "返回被转换成小写形式的输入项结果. 遵循Unicode默认的大小写转换算法(Unicode Default Case Conversion),在语言环境不敏感的情况下，与Unicode字符数据库保持映射一致.",
         "group": "String",
         "sdk-support": {
           "basic functionality": {
@@ -3131,7 +3131,7 @@
         }
       },
       "concat": {
-        "doc": "Returns a string consisting of the concatenation of the inputs.",
+        "doc": "返回一组并行的传入字符拼接而成的字符串结果.",
         "group": "String",
         "sdk-support": {
           "basic functionality": {
@@ -3143,7 +3143,7 @@
         }
       },
       "resolved-locale": {
-        "doc": "Returns the IETF language tag of the locale being used by the provided `collator`. This can be used to determine the default system locale, or to determine if a requested locale was successfully loaded.",
+        "doc": "当使用给定的 `collator` 时,返回当前环境的IETF语言标签. 可被用于确定默认的系统区域设置, 或用于确定请求的语言环境是否成功加载.",
         "group": "String",
         "sdk-support": {
           "basic functionality": {
@@ -3161,10 +3161,10 @@
       "default": "viewport",
       "values": {
         "map": {
-          "doc": "The position of the light source is aligned to the rotation of the map."
+          "doc": "与地图的旋转回绕同步的光源位置."
         },
         "viewport": {
-          "doc": "The position of the light source is aligned to the rotation of the viewport."
+          "doc": "与用户可视区域的旋转回绕同步的光源位置."
         }
       },
       "property-type": "data-constant",
@@ -3175,7 +3175,7 @@
           "zoom"
         ]
       },
-      "doc": "Whether extruded geometries are lit relative to the map or viewport.",
+      "doc": "拉伸的几何图形是否被点亮(相对于地图画面和用户可视区域).",
       "example": "map",
       "sdk-support": {
         "basic functionality": {
@@ -3203,7 +3203,7 @@
           "zoom"
         ]
       },
-      "doc": "Position of the light source relative to lit (extruded) geometries, in [r radial coordinate, a azimuthal angle, p polar angle] where r indicates the distance from the center of the base of an object to its light, a indicates the position of the light relative to 0° (0° when `light.anchor` is set to `viewport` corresponds to the top of the viewport, or 0° when `light.anchor` is set to `map` corresponds to due north, and degrees proceed clockwise), and p indicates the height of the light (from 0°, directly above, to 180°, directly below).",
+      "doc": "与提亮被拉伸的几何形状有关的光源位置, [r 径向坐标, a 方位角, p 极角] 中 r 确定一个对象的基础中心点到它的明亮位置的距离, a 确定明亮部分相对于0°的位置(当 `light.anchor` 被设置为 `viewport` 对应用户可视区域的顶部, 位置为0°; 当 `light.anchor` 被设置为 `map` 对应正北,且顺时针推衍,位置也为0°), 而 p 确定亮点的高度 (从 0°,则垂直向下, 到 180°, 则直线向上).",
       "example": [
         1.5,
         90,
@@ -3229,7 +3229,7 @@
         ]
       },
       "transition": true,
-      "doc": "Color tint for lighting extruded geometries.",
+      "doc": "被点亮的拉伸的几何形状的颜色.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.27.0",
@@ -3252,7 +3252,7 @@
         ]
       },
       "transition": true,
-      "doc": "Intensity of lighting (on a scale from 0 to 1). Higher numbers will present as more extreme contrast.",
+      "doc": "光的对比度 (取值范围为0到1). 数值越大, 对比度越强.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.27.0",
@@ -3278,7 +3278,7 @@
     "fill-antialias": {
       "type": "boolean",
       "default": true,
-      "doc": "Whether or not the fill should be antialiased.",
+      "doc": "此值说明填充区域是否具有抗锯齿属性.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3301,7 +3301,7 @@
       "default": 1,
       "minimum": 0,
       "maximum": 1,
-      "doc": "The opacity of the entire fill layer. In contrast to the `fill-color`, this value will also affect the 1px stroke around the fill, if the stroke is used.",
+      "doc": "整个填充图层的透明度. 与 `fill-color` 相对比, 若填充区域环绕有1px宽的边线, 那么它的显示效果将会被影响.",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -3330,7 +3330,7 @@
     "fill-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The color of the filled part of this layer. This color can be specified as `rgba` with an alpha component and the color's opacity will not affect the opacity of the 1px stroke, if it is used.",
+      "doc": "图层填充区域的颜色. 此颜色可通过α组件确定为 `rgba` , 若设置了颜色透明度, 其不会影响到1px宽的线条.",
       "transition": true,
       "requires": [
         {
@@ -3363,7 +3363,7 @@
     },
     "fill-outline-color": {
       "type": "color",
-      "doc": "The outline color of the fill. Matches the value of `fill-color` if unspecified.",
+      "doc": "填充区域的边框颜色. 若暂未设置, 则与 `fill-color` 的值一致.",
       "transition": true,
       "requires": [
         {
@@ -3407,7 +3407,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "The geometry's offset. Values are [x, y] where negatives indicate left and up, respectively.",
+      "doc": "几何偏移值. 坐标值 [x, y] 中,负值分别表示同一平面上的向左和向上.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3429,13 +3429,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The fill is translated relative to the map."
+          "doc": "填充区域此时所表达的内容是相对于整个地图的."
         },
         "viewport": {
-          "doc": "The fill is translated relative to the viewport."
+          "doc": "填充区域此时所表达的内容是相对于用户可视区域的."
         }
       },
-      "doc": "Controls the frame of reference for `fill-translate`.",
+      "doc": "控制 `fill-translate` 的参考框架.",
       "default": "map",
       "requires": [
         "fill-translate"
@@ -3460,7 +3460,7 @@
     "fill-pattern": {
       "type": "string",
       "transition": true,
-      "doc": "Name of image in sprite to use for drawing image fills. For seamless patterns, image width and height must be a factor of two (2, 4, 8, ..., 512). Note that zoom-dependent expressions will be evaluated only at integer zoom levels.",
+      "doc": "用于启发在填充区域上绘画创作的样式图片名称. 在无缝模式下, 图片的宽度和高度必须是2的倍数 (2, 4, 8, ..., 512). 注意, 与缩放相关的表达式仅在整数缩放条件下有效.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -3485,7 +3485,7 @@
       "default": 1,
       "minimum": 0,
       "maximum": 1,
-      "doc": "The opacity of the entire fill extrusion layer. This is rendered on a per-layer, not per-feature, basis, and data-driven styling is not available.",
+      "doc": "The opac.",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -3506,7 +3506,7 @@
     "fill-extrusion-color": {
       "type": "color",
       "default": "#000000",
-      "doc": "The base color of the extruded fill. The extrusion's surfaces will be shaded differently based on this color in combination with the root `light` settings. If this color is specified as `rgba` with an alpha component, the alpha component will be ignored; use `fill-extrusion-opacity` to set layer opacity.",
+      "doc": "拉伸填充区域的基础色. 拉伸区域的表面会因基础色与原先的 `light` 设置相结合而呈现出不同深浅的色度 . 如果颜色通过α组件被规定为 `rgba` , α组件将会被忽略; 可使用  `fill-extrusion-opacity` 来设置图层透明度.",
       "transition": true,
       "requires": [
         {
@@ -3547,7 +3547,7 @@
       ],
       "transition": true,
       "units": "pixels",
-      "doc": "The geometry's offset. Values are [x, y] where negatives indicate left and up (on the flat plane), respectively.",
+      "doc": "几何偏移值. 坐标值 [x, y] 中,负值分别表示同一平面上的向左和向上.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.27.0",
@@ -3569,13 +3569,13 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The fill extrusion is translated relative to the map."
+          "doc": "拉伸填充区域此时所表达的内容是相对于地图的."
         },
         "viewport": {
-          "doc": "The fill extrusion is translated relative to the viewport."
+          "doc": "拉伸填充区域此时所表达的内容是相对于用户可视区域的."
         }
       },
-      "doc": "Controls the frame of reference for `fill-extrusion-translate`.",
+      "doc": "控制 `fill-extrusion-translate` 的参考框架.",
       "default": "map",
       "requires": [
         "fill-extrusion-translate"
@@ -3600,7 +3600,7 @@
     "fill-extrusion-pattern": {
       "type": "string",
       "transition": true,
-      "doc": "Name of image in sprite to use for drawing images on extruded fills. For seamless patterns, image width and height must be a factor of two (2, 4, 8, ..., 512). Note that zoom-dependent expressions will be evaluated only at integer zoom levels.",
+      "doc": "用于启发在拉伸填充部分上绘画创作的样式图片名称. 在无缝模式下, 图片的宽度和高度必须是2的倍数 (2, 4, 8, ..., 512). 注意, 与缩放相关的表达式仅在整数缩放条件下有效.",
       "sdk-support": {
         "basic functionality": {
           "js": "0.27.0",
@@ -3623,7 +3623,7 @@
       "default": 0,
       "minimum": 0,
       "units": "meters",
-      "doc": "The height with which to extrude this layer.",
+      "doc": "拉伸图层的高度.",
       "transition": true,
       "sdk-support": {
         "basic functionality": {
@@ -3654,7 +3654,7 @@
       "default": 0,
       "minimum": 0,
       "units": "meters",
-      "doc": "The height with which to extrude the base of this layer. Must be less than or equal to `fill-extrusion-height`.",
+      "doc": "基础图层的拉伸高度. 必须小于或等于 `fill-extrusion-height`.",
       "transition": true,
       "requires": [
         "fill-extrusion-height"
