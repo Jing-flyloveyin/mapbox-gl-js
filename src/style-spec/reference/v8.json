@@ -1822,7 +1822,7 @@
       "default": 0,
       "period": 360,
       "units": "degrees",
-      "doc": "Rotates the text clockwise.",
+      "doc": "顺时针旋转文本",
       "requires": [
         "text-field"
       ],
@@ -1854,7 +1854,7 @@
       "default": 2,
       "minimum": 0,
       "units": "pixels",
-      "doc": "Size of the additional area around the text bounding box used for detecting symbol collisions.",
+      "doc": "用于检测符号冲突的文本边界框周围的附加区域的大小。",
       "requires": [
         "text-field"
       ],
@@ -1878,7 +1878,7 @@
     "text-keep-upright": {
       "type": "boolean",
       "default": true,
-      "doc": "If true, the text may be flipped vertically to prevent it from being rendered upside-down.",
+      "doc": "如果为true，则可以垂直翻转文本以防止其呈现倒置",
       "requires": [
         "text-field",
         {
@@ -1912,17 +1912,17 @@
       "type": "enum",
       "values": {
         "none": {
-          "doc": "The text is not altered."
+          "doc": "文本没有改变。"
         },
         "uppercase": {
-          "doc": "Forces all letters to be displayed in uppercase."
+          "doc": "强制所有字母以大写形式显示。"
         },
         "lowercase": {
-          "doc": "Forces all letters to be displayed in lowercase."
+          "doc": "强制所有字母以小写形式显示。"
         }
       },
       "default": "none",
-      "doc": "Specifies how to capitalize text, similar to the CSS `text-transform` property.",
+      "doc": "指定如何大写文本，类似于CSS样式`text-transform`属性。",
       "requires": [
         "text-field"
       ],
@@ -1951,7 +1951,7 @@
     },
     "text-offset": {
       "type": "array",
-      "doc": "Offset distance of text from its anchor. Positive values indicate right and down, while negative values indicate left and up.",
+      "doc": "文本与其锚点的偏移距离。正值表示向右和向下，而负值表示向左和向上。",
       "value": "number",
       "units": "ems",
       "length": 2,
@@ -1988,7 +1988,7 @@
     "text-allow-overlap": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, the text will be visible even if it collides with other previously drawn symbols.",
+      "doc": "如果为 true ，即使文本与其他先前绘制的符号发生碰撞（遮挡），文本也会可见。",
       "requires": [
         "text-field"
       ],
@@ -2012,7 +2012,7 @@
     "text-ignore-placement": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, other symbols can be visible even if they collide with the text.",
+      "doc": "如果是 true ，即使它们与文本冲突，其他符号也是可见的。",
       "requires": [
         "text-field"
       ],
@@ -2036,7 +2036,7 @@
     "text-optional": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, icons will display without their corresponding text when the text collides with other symbols and the icon does not.",
+      "doc": "如果为 true ，当文本与其他符号发生碰撞且图标没有碰撞时，图标将显示没有相应的文本。",
       "requires": [
         "text-field",
         "icon-image"
@@ -2062,14 +2062,14 @@
       "type": "enum",
       "values": {
         "visible": {
-          "doc": "The layer is shown."
+          "doc": "显示该层。"
         },
         "none": {
-          "doc": "The layer is not shown."
+          "doc": "隐藏该层。"
         }
       },
       "default": "visible",
-      "doc": "Whether this layer is displayed.",
+      "doc": "是否显示该图层。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -2087,14 +2087,14 @@
       "type": "enum",
       "values": {
         "visible": {
-          "doc": "The layer is shown."
+          "doc": "显示该层。"
         },
         "none": {
-          "doc": "The layer is not shown."
+          "doc": "隐藏该层。"
         }
       },
       "default": "visible",
-      "doc": "Whether this layer is displayed.",
+      "doc": "是否显示该图层。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -2112,14 +2112,14 @@
       "type": "enum",
       "values": {
         "visible": {
-          "doc": "The layer is shown."
+          "doc": "显示该图层。"
         },
         "none": {
-          "doc": "The layer is not shown."
+          "doc": "隐藏该图层"
         }
       },
       "default": "visible",
-      "doc": "Whether this layer is displayed.",
+      "doc": "是否显示该图层",
       "sdk-support": {
         "basic functionality": {
           "js": "0.43.0",
@@ -2135,7 +2135,7 @@
   "filter": {
     "type": "array",
     "value": "*",
-    "doc": "A filter selects specific features from a layer."
+    "doc": "一个过滤器从图层中选择特定要素。"
   },
   "filter_operator": {
     "type": "enum",
@@ -2180,83 +2180,83 @@
         "doc": "`[\"!has\", key]` `feature[key]` does not exist"
       }
     },
-    "doc": "The filter operator."
+    "doc": "过滤器运算符。"
   },
   "geometry_type": {
     "type": "enum",
     "values": {
       "Point": {
-        "doc": "Filter to point geometries."
+        "doc": "过滤到点几何。"
       },
       "LineString": {
-        "doc": "Filter to line geometries."
+        "doc": "过滤到线几何。"
       },
       "Polygon": {
-        "doc": "Filter to polygon geometries."
+        "doc": "过滤到多边形几何。"
       }
     },
-    "doc": "The geometry type for the filter to select."
+    "doc": "要选择的过滤器的几何类型。"
   },
   "function": {
     "expression": {
       "type": "expression",
-      "doc": "An expression."
+      "doc": "一个表达式。"
     },
     "stops": {
       "type": "array",
-      "doc": "An array of stops.",
+      "doc": "stops的一个数组。",
       "value": "function_stop"
     },
     "base": {
       "type": "number",
       "default": 1,
       "minimum": 0,
-      "doc": "The exponential base of the interpolation curve. It controls the rate at which the result increases. Higher values make the result increase more towards the high end of the range. With `1` the stops are interpolated linearly."
+      "doc": "插值曲线的指数基数。它控制结果增加的速率。较高的值使结果更多地朝向范围的高端增加。对于”1“，停止是线性插值的。"
     },
     "property": {
       "type": "string",
-      "doc": "The name of a feature property to use as the function input.",
+      "doc": "函数属性的输入名类型。",
       "default": "$zoom"
     },
     "type": {
       "type": "enum",
       "values": {
         "identity": {
-          "doc": "Return the input value as the output value."
+          "doc": "将输入值作为输出值返回。"
         },
         "exponential": {
-          "doc": "Generate an output by interpolating between stops just less than and just greater than the function input."
+          "doc": "通常情况下，一个通过在停止之间插入仅小于和大于函数输入来生成输出。"
         },
         "interval": {
-          "doc": "Return the output value of the stop just less than the function input."
+          "doc": "返回停止的输出值，小于函数输入。"
         },
         "categorical": {
-          "doc": "Return the output value of the stop equal to the function input."
+          "doc": "返回停止的输出值等于函数输入。"
         }
       },
-      "doc": "The interpolation strategy to use in function evaluation.",
+      "doc": "用于功能评估的插值策略。",
       "default": "exponential"
     },
     "colorSpace": {
       "type": "enum",
       "values": {
         "rgb": {
-          "doc": "Use the RGB color space to interpolate color values"
+          "doc": "使用RGB颜色空间插入颜色值。"
         },
         "lab": {
-          "doc": "Use the LAB color space to interpolate color values."
+          "doc": "使用LBA颜色空间插入颜色值"
         },
         "hcl": {
-          "doc": "Use the HCL color space to interpolate color values, interpolating the Hue, Chroma, and Luminance channels individually."
+          "doc": "针对单独插值Hue，Chroma和Luminance通道，使用HCL颜色空间来插值颜色值。"
         }
       },
-      "doc": "The color space in which colors interpolated. Interpolating colors in perceptual color spaces like LAB and HCL tend to produce color ramps that look more consistent and produce colors that can be differentiated more easily than those interpolated in RGB space.",
+      "doc": "插入颜色的颜色空间。在LAB和HCL等感知颜色空间中插入颜色往往会产生看起来更一致的颜色渐变，并且产生的颜色可以比RGB空间中插入的颜色更容易区分。",
       "default": "rgb"
     },
     "default": {
       "type": "*",
       "required": false,
-      "doc": "A value to serve as a fallback function result when a value isn't otherwise available. It is used in the following circumstances:\n* In categorical functions, when the feature value does not match any of the stop domain values.\n* In property and zoom-and-property functions, when a feature does not contain a value for the specified property.\n* In identity functions, when the feature value is not valid for the style property (for example, if the function is being used for a `circle-color` property but the feature property value is not a string or not a valid color).\n* In interval or exponential property and zoom-and-property functions, when the feature value is not numeric.\nIf no default is provided, the style property's default is used in these circumstances."
+      "doc": "当值不可用时，用作回调函数的值。在以下情况下使用它：1-在分类函数中，当特征值与任何停止域不匹配时 值。2-在属性和缩放和属性函数中，当一个特征不包含指定属性的值时。3-在标识函数中，当特征值对样式属性无效时（例如， 如果该函数用于`circle-color`属性，但feature属性值不是字符串或不是有效颜色）。4-在interval或exponential属性和zoom-and-property函数中，当特征值 不是数字。5-如果没有提供默认值，则在这些情况下使用样式属性的默认值。"
     }
   },
   "function_stop": {
@@ -2268,20 +2268,20 @@
       "color"
     ],
     "length": 2,
-    "doc": "Zoom level and value pair."
+    "doc": "缩放等级和键值对。"
   },
   "expression": {
     "type": "array",
     "value": "*",
     "minimum": 1,
-    "doc": "An expression defines a function that can be used for data-driven style properties or feature filters."
+    "doc": "表达式定义了一个可用于数据驱动的样式属性或特征过滤器的函数。"
   },
   "expression_name": {
     "doc": "",
     "type": "enum",
     "values": {
       "let": {
-        "doc": "Binds expressions to named variables, which can then be referenced in the result expression using [\"var\", \"variable_name\"].",
+        "doc": "将表达式绑定到函数名变量，在结果表达式中使用 [\"var\", \"variable_name\"] 来进行引用。",
         "group": "Variable binding",
         "sdk-support": {
           "basic functionality": {
@@ -2293,7 +2293,7 @@
         }
       },
       "var": {
-        "doc": "References variable bound using \"let\".",
+        "doc": "引用变量的绑定使用 \"let\"。",
         "group": "Variable binding",
         "sdk-support": {
           "basic functionality": {
@@ -2305,7 +2305,7 @@
         }
       },
       "literal": {
-        "doc": "Provides a literal array or object value.",
+        "doc": "提供一个文字数组或对象值。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2317,7 +2317,7 @@
         }
       },
       "array": {
-        "doc": "Asserts that the input is an array (optionally with a specific item type and length).  If, when the input expression is evaluated, it is not of the asserted type, then this assertion will cause the whole expression to be aborted.",
+        "doc": "声明输入是一个数组（可选地具有特定的项类型和长度）。如果在计算输入表达式时，它不是声明类型，那么这个声明将导致整个表达式为中止。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2329,7 +2329,7 @@
         }
       },
       "at": {
-        "doc": "Retrieves an item from an array.",
+        "doc": "从数组中检索项目。",
         "group": "Lookup",
         "sdk-support": {
           "basic functionality": {
@@ -2341,7 +2341,7 @@
         }
       },
       "case": {
-        "doc": "Selects the first output whose corresponding test condition evaluates to true.",
+        "doc": "选择相应测试条件评估为真的第一个输出。",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -2353,7 +2353,7 @@
         }
       },
       "match": {
-        "doc": "Selects the output whose label value matches the input value, or the fallback value if no match is found. The input can be any expression (e.g. `[\"get\", \"building_type\"]`). Each label must either be a single literal value or an array of literal values (e.g. `\"a\"` or `[\"c\", \"b\"]`), and those values must be all strings or all numbers. (The values `\"1\"` and `1` cannot both be labels in the same match expression.) If the input type does not match the type of the labels, the result will be the fallback value.",
+        "doc": "选择标签值与输入值匹配的输出，如果找不到匹配则选择回退值。输入可以是任何表达式（例如`[\”get \“，\”building_type \“]`） 每个标签必须是单个文字值或文字值数组（例如`\“a \”`或`[\“c \”，\“b \”]`），这些值必须是所有字符串 或者所有数字。（值“\”1 \“`和`1`不能同时是同一匹配表达式中的标签。）如果输入类型与标签的类型不匹配，则结果将是回退值。",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -2365,7 +2365,7 @@
         }
       },
       "coalesce": {
-        "doc": "Evaluates each expression in turn until the first non-null value is obtained, and returns that value.",
+        "doc": "“依次计算每个表达式，直到获得第一个非空值，并返回该值。",
         "group": "Decision",
         "sdk-support": {
           "basic functionality": {
@@ -2377,7 +2377,7 @@
         }
       },
       "step": {
-        "doc": "Produces discrete, stepped results by evaluating a piecewise-constant function defined by pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order. Returns the output value of the stop just less than the input, or the first input if the input is less than the first stop.",
+        "doc": "通过评估由输入和输出值对（\”stops \“）定义的分段常量函数来产生离散的步进结果。”input“可以是任何数字表达式（例如，``\` \“，\”population \“]`）。停止输入必须是严格升序的数字文字。返回小于输入的停止输出值，如果输入小于第一个停止则返回第一个输入。",
         "group": "Ramps, scales, curves",
         "sdk-support": {
           "basic functionality": {
@@ -2389,7 +2389,7 @@
         }
       },
       "interpolate": {
-        "doc": "Produces continuous, smooth results by interpolating between pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order. The output type must be `number`, `array<number>`, or `color`.\n\nInterpolation types:\n- `[\"linear\"]`: interpolates linearly between the pair of stops just less than and just greater than the input.\n- `[\"exponential\", base]`: interpolates exponentially between the stops just less than and just greater than the input. `base` controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.\n- `[\"cubic-bezier\", x1, y1, x2, y2]`: interpolates using the cubic bezier curve defined by the given control points.",
+        "doc": "通过在输入和输出值对之间进行插值（\”stop \“）来产生连续、平滑的结果。”input“可以是任何数字表达式（例如，`[\”get \“，\” \“]`）。停止输入必须是严格升序的数字文字。输出类型必须是`number`，`array <number>`或`color`。插值类型：`[\ “linear \”]`：在一对止点之间线性插值，只是小于和大于输入。`[\“指数\”，基数]`：在止点之间以指数方式插值，小于和大于 “base”控制输出增加的速率：较高的值使输出增加到更高的范围。当值接近1时，输出线性增加。`[\“cubic- bezier \“，x1，y1，x2，y2]`：使用由给定控制点定义的三次贝塞尔曲线进行插值。",
         "group": "Ramps, scales, curves",
         "sdk-support": {
           "basic functionality": {
@@ -2401,7 +2401,7 @@
         }
       },
       "ln2": {
-        "doc": "Returns mathematical constant ln(2).",
+        "doc": "返回数学常数 ln(2)。",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2413,7 +2413,7 @@
         }
       },
       "pi": {
-        "doc": "Returns the mathematical constant pi.",
+        "doc": "返回数学常数 π 。",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2425,7 +2425,7 @@
         }
       },
       "e": {
-        "doc": "Returns the mathematical constant e.",
+        "doc": "返回数学常数 e 。",
         "group": "Math",
         "sdk-support": {
           "basic functionality": {
@@ -2437,7 +2437,7 @@
         }
       },
       "typeof": {
-        "doc": "Returns a string describing the type of the given value.",
+        "doc": "返回所描述给定值类型的字符串。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2449,7 +2449,7 @@
         }
       },
       "string": {
-        "doc": "Asserts that the input value is a string. If multiple values are provided, each one is evaluated in order until a string is obtained. If none of the inputs are strings, the expression is an error.",
+        "doc": "声明输入值是一个字符串。如果提供了多个值，则按顺序计算每个值，直到获得一个字符串。如果没有输入是字符串，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2461,7 +2461,7 @@
         }
       },
       "number": {
-        "doc": "Asserts that the input value is a number. If multiple values are provided, each one is evaluated in order until a number is obtained. If none of the inputs are numbers, the expression is an error.",
+        "doc": "声明输入值是一个数字。如果提供了多个值，则按顺序计算每个值，直到获得一个数字。如果没有输入是个数字，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2473,7 +2473,7 @@
         }
       },
       "boolean": {
-        "doc": "Asserts that the input value is a boolean. If multiple values are provided, each one is evaluated in order until a boolean is obtained. If none of the inputs are booleans, the expression is an error.",
+        "doc": "声明输入值是一个布尔值。如果提供了多个值，则按顺序计算每个值，直到获得一个布尔值。如果没有输入是个布尔值，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2485,7 +2485,7 @@
         }
       },
       "object": {
-        "doc": "Asserts that the input value is an object. If multiple values are provided, each one is evaluated in order until an object is obtained. If none of the inputs are objects, the expression is an error.",
+        "doc": "声明输入值是一个对象。如果提供了多个值，则按顺序计算每个值，直到获得一个对象。如果没有输入是个对象，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2497,7 +2497,7 @@
         }
       },
       "collator": {
-        "doc": "Returns a `collator` for use in locale-dependent comparison operations. The `case-sensitive` and `diacritic-sensitive` options default to `false`. The `locale` argument specifies the IETF language tag of the locale to use. If none is provided, the default locale is used. If the requested locale is not available, the `collator` will use a system-defined fallback locale. Use `resolved-locale` to test the results of locale fallback behavior.",
+        "doc": "返回一个’collator‘，用于依赖于语言环境的比较操作。”case-sensitive“和”diacritic-sensitive“选项默认为“false”。‘locale’参数指定IETF语言标记。 要使用的语言环境。如果没有提供，则使用默认语言环境。如果请求的语言环境不可用，`collator`将使用系统定义的回退语言环境。使用`resolved-locale`测试语言环境回退行为的结果。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2508,7 +2508,7 @@
         }
       },
       "to-string": {
-        "doc": "Converts the input value to a string. If the input is `null`, the result is `\"\"`. If the input is a boolean, the result is `\"true\"` or `\"false\"`. If the input is a number, it is converted to a string as specified by the [\"NumberToString\" algorithm](https://tc39.github.io/ecma262/#sec-tostring-applied-to-the-number-type) of the ECMAScript Language Specification. If the input is a color, it is converted to a string of the form `\"rgba(r,g,b,a)\"`, where `r`, `g`, and `b` are numerals ranging from 0 to 255, and `a` ranges from 0 to 1. Otherwise, the input is converted to a string in the format specified by the [`JSON.stringify`](https://tc39.github.io/ecma262/#sec-json.stringify) function of the ECMAScript Language Specification.",
+        "doc": "将输入值转换为字符串。如果输入为”null“，则结果为”\“\”。如果输入为布尔值，则结果为“\”true \“`或` \“false \”。如果输入是一个数字，它将被转换为[\“NumberToString \”算法]指定的字符串（https://tc39.github.io/ecma262/#sec-tostring- ECMAScript语言规范的“应用于数字类型”。如果输入是一种颜色，它将被转换为“\”rgba（r，g，b，a）\“形式的字符串，其中 `r`，`g`和`b`是0到255之间的数字，`a`的范围是0到1.否则，输入将转换为[`JSON.stringify指定格式的字符串 `]（https://tc39.github.io/ecma262/#sec-json.stringify）ECMAScript语言规范的功能。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2520,7 +2520,7 @@
         }
       },
       "to-number": {
-        "doc": "Converts the input value to a number, if possible. If the input is `null` or `false`, the result is 0. If the input is `true`, the result is 1. If the input is a string, it is converted to a number as specified by the [\"ToNumber Applied to the String Type\" algorithm](https://tc39.github.io/ecma262/#sec-tonumber-applied-to-the-string-type) of the ECMAScript Language Specification. If multiple values are provided, each one is evaluated in order until the first successful conversion is obtained. If none of the inputs can be converted, the expression is an error.",
+        "doc": "将输入值转换为数字。如果输入为”null“或”false“，则结果为0。如果输入为”true“，则结果为1.如果输入为一个字符串，它被转换为[\“ToNumber应用于字符串类型\”算法]指定的数字（https://tc39.github.io/ecma262/#sec-tonumber-applied-to-the- ECMAScript语言规范的字符串类型。如果提供了多个值，则按顺序计算每个值，直到获得第一次成功转换。如果没有任何输入可以转换，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2532,7 +2532,7 @@
         }
       },
       "to-boolean": {
-        "doc": "Converts the input value to a boolean. The result is `false` when then input is an empty string, 0, `false`, `null`, or `NaN`; otherwise it is `true`.",
+        "doc": "将输入值转换为布尔值。当输入为空字符串，0，”false“，”null“或”NaN“时，结果为”false“;否则为”true“。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2544,7 +2544,7 @@
         }
       },
       "to-rgba": {
-        "doc": "Returns a four-element array containing the input color's red, green, blue, and alpha components, in that order.",
+        "doc": "按顺序返回包含输入颜色的红色，绿色，蓝色和alpha分量的四元素数组。",
         "group": "Color",
         "sdk-support": {
           "basic functionality": {
@@ -2556,7 +2556,7 @@
         }
       },
       "to-color": {
-        "doc": "Converts the input value to a color. If multiple values are provided, each one is evaluated in order until the first successful conversion is obtained. If none of the inputs can be converted, the expression is an error.",
+        "doc": "将输入值转换为颜色。如果提供了多个值，则按顺序计算每个值，直到获得第一次成功转换。如果没有任何输入可以转换，则表达式是错误。",
         "group": "Types",
         "sdk-support": {
           "basic functionality": {
@@ -2568,7 +2568,7 @@
         }
       },
       "rgb": {
-        "doc": "Creates a color value from red, green, and blue components, which must range between 0 and 255, and an alpha component of 1. If any component is out of range, the expression is an error.",
+        "doc": "创建一个颜色值，分量红色，绿色和蓝色，其范围必须介于0到255之间，alpha组件为1.如果任何组件超出范围，则表达式是错误。",
         "group": "Color",
         "sdk-support": {
           "basic functionality": {
@@ -2580,7 +2580,7 @@
         }
       },
       "rgba": {
-        "doc": "Creates a color value from red, green, blue components, which must range between 0 and 255, and an alpha component which must range between 0 and 1. If any component is out of range, the expression is an error.",
+        "doc": "创建一个颜色值，分量红色，绿色和蓝色，其范围必须介于0到255之间，alpha组件为1.如果任何组件超出范围，则表达式是错误。",
         "group": "Color",
         "sdk-support": {
           "basic functionality": {
@@ -2592,7 +2592,7 @@
         }
       },
       "get": {
-        "doc": "Retrieves a property value from the current feature's properties, or from another object if a second argument is provided. Returns null if the requested property is missing.",
+        "doc": "从当前要素的属性中检索属性值，如果提供了第二个参数，则从另一个对象检索属性值。如果请求的属性丢失，则返回 null。",
         "group": "Lookup",
         "sdk-support": {
           "basic functionality": {
@@ -2604,7 +2604,7 @@
         }
       },
       "has": {
-        "doc": "Tests for the presence of an property value in the current feature's properties, or from another object if a second argument is provided.",
+        "doc": "测试当前要素属性中是否存在属性值，或者如果提供了第二个参数则测试另一个对象。",
         "group": "Lookup",
         "sdk-support": {
           "basic functionality": {
@@ -2616,7 +2616,7 @@
         }
       },
       "length": {
-        "doc": "Gets the length of an array or string.",
+        "doc": "获取字符串数组的长度。",
         "group": "Lookup",
         "sdk-support": {
           "basic functionality": {
@@ -2628,7 +2628,7 @@
         }
       },
       "properties": {
-        "doc": "Gets the feature properties object.  Note that in some cases, it may be more efficient to use [\"get\", \"property_name\"] directly.",
+        "doc": "获得对象的特征属性。在一些实例中，直接用 [\"get\", \"property_name\"] 来得到高效的调用。",
         "group": "Feature data",
         "sdk-support": {
           "basic functionality": {
@@ -2640,7 +2640,7 @@
         }
       },
       "feature-state": {
-        "doc": "Retrieves a property value from the current feature's state. Returns null if the requested property is not present on the feature's state. A feature's state is not part of the GeoJSON or vector tile data, and must be set programmatically on each feature. Note that [\"feature-state\"] can only be used with paint properties that support data-driven styling.",
+        "doc": "从当前要素的状态中检索属性值。如果要素属性不存在于要素的状态中，则返回null。要素的状态不是GeoJSON或矢量切片数据的一部分，必须在每个属性上以编程方式设置。 注意，[\“feature-state \”]只能用于支持数据驱动样式的绘图属性。",
         "group": "Feature data",
         "sdk-support": {
           "basic functionality": {
@@ -2649,7 +2649,7 @@
         }
       },
       "geometry-type": {
-        "doc": "Gets the feature's geometry type: Point, MultiPoint, LineString, MultiLineString, Polygon, MultiPolygon.",
+        "doc": "获取要素的几何属性: Point, MultiPoint, LineString, MultiLineString, Polygon, MultiPolygon。",
         "group": "Feature data",
         "sdk-support": {
           "basic functionality": {
@@ -2661,7 +2661,7 @@
         }
       },
       "id": {
-        "doc": "Gets the feature's id, if it has one.",
+        "doc": "如果有这个要素的话，获取其id值。",
         "group": "Feature data",
         "sdk-support": {
           "basic functionality": {
@@ -2673,7 +2673,7 @@
         }
       },
       "zoom": {
-        "doc": "Gets the current zoom level.  Note that in style layout and paint properties, [\"zoom\"] may only appear as the input to a top-level \"step\" or \"interpolate\" expression.",
+        "doc": "获取当前缩放级别。请注意，在样式布局和绘画属性中，[\”zoom \“]可能只显示为顶级\”step \“或\”interpolate \“表达式的输入。",
         "group": "Zoom",
         "sdk-support": {
           "basic functionality": {
@@ -2685,7 +2685,7 @@
         }
       },
       "heatmap-density": {
-        "doc": "Gets the kernel density estimation of a pixel in a heatmap layer, which is a relative measure of how many data points are crowded around a particular pixel. Can only be used in the `heatmap-color` property.",
+        "doc": "获取热图图层中像素的核密度估计值，这是对特定像素周围拥挤的数据点的相对度量。只能在“heatmap-color”属性中使用。",
         "group": "Heatmap",
         "sdk-support": {
           "basic functionality": {
@@ -2697,7 +2697,7 @@
         }
       },
       "line-progress": {
-        "doc": "Gets the progress along a gradient line. Can only be used in the `line-gradient` property.",
+        "doc": "沿着渐变线获取进度。只能在“line-gradient”属性中使用。",
         "group": "Heatmap"
       },
       "+": {
