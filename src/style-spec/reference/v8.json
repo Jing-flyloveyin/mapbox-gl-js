@@ -906,7 +906,7 @@
       "default": 250,
       "minimum": 1,
       "units": "pixels",
-      "doc": "Distance between two symbol anchors.",
+      "doc": "两个符号锚点之间的距离。",
       "requires": [
         {
           "symbol-placement": "line"
@@ -932,7 +932,7 @@
     "symbol-avoid-edges": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, the symbols will not cross tile edges to avoid mutual collisions. Recommended in layers that don't have enough padding in the vector tile to prevent collisions, or if it is a point symbol layer placed after a line symbol layer.",
+      "doc": "如果值为true, 那么符号将不会超出tile边缘，这样就可以避免符号之间的相互冲突。建议在被矢量切片没有完全填充的图层中尽量防止冲突。比如一个点符号图层位于一个线符号图层之后",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -953,7 +953,7 @@
     "icon-allow-overlap": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, the icon will be visible even if it collides with other previously drawn symbols.",
+      "doc": "如果值为true，即使图标与先前已经绘制的符号位置冲突，该图标也可见。",
       "requires": [
         "icon-image"
       ],
@@ -977,7 +977,7 @@
     "icon-ignore-placement": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, other symbols can be visible even if they collide with the icon.",
+      "doc": "如果为true，即使其他符号与图标发生碰撞，也可以看到其他符号。",
       "requires": [
         "icon-image"
       ],
@@ -1001,7 +1001,7 @@
     "icon-optional": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, text will display without their corresponding icons when the icon collides with other symbols and the text does not.",
+      "doc": "如果值为true，当图标符号与其他符号相冲突，但是文本未冲突，文本将不显示。",
       "requires": [
         "icon-image",
         "text-field"
@@ -1027,17 +1027,17 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "When `symbol-placement` is set to `point`, aligns icons east-west. When `symbol-placement` is set to `line` or `line-center`, aligns icon x-axes with the line."
+          "doc": "当`symbol-placement` 的值被设置为`point`, 图标将和东西方向对齐. 当 `symbol-placement` 被设置为`line` 或者`line-center`, 图标将和线的x轴对齐。"
         },
         "viewport": {
-          "doc": "Produces icons whose x-axes are aligned with the x-axis of the viewport, regardless of the value of `symbol-placement`."
+          "doc": "不管`symbol-placement`的值是多少，生成图标的X轴将和视图的X轴对齐。"
         },
         "auto": {
-          "doc": "When `symbol-placement` is set to `point`, this is equivalent to `viewport`. When `symbol-placement` is set to `line` or `line-center`, this is equivalent to `map`."
+          "doc": "当`symbol-placement`的值被设置为`point`, 旋转行为将和`viewport`保持一致。当`symbol-placement` 被设置为`line`或者`line-center`, 将和`map`保持一致。"
         }
       },
       "default": "auto",
-      "doc": "In combination with `symbol-placement`, determines the rotation behavior of icons.",
+      "doc": "和`symbol-placement`属性结合使用, 用来控制图标的旋转行为。",
       "requires": [
         "icon-image"
       ],
@@ -1069,7 +1069,7 @@
       "default": 1,
       "minimum": 0,
       "units": "factor of the original icon size",
-      "doc": "Scales the original size of the icon by the provided factor. The new pixel size of the image will be the original pixel size multiplied by `icon-size`. 1 is the original size; 3 triples the size of the image.",
+      "doc": "按照提供的缩放系数缩放图标的原始大小，图片的新像素大小等于原始的像素大小乘以iconsize。1是原始尺寸; 3倍于图像的大小。",
       "requires": [
         "icon-image"
       ],
@@ -1100,20 +1100,20 @@
       "type": "enum",
       "values": {
         "none": {
-          "doc": "The icon is displayed at its intrinsic aspect ratio."
+          "doc": "图标将以其原有的宽高比例显示。"
         },
         "width": {
-          "doc": "The icon is scaled in the x-dimension to fit the width of the text."
+          "doc": "图标将在x维度上缩放以适合文本的宽度。"
         },
         "height": {
-          "doc": "The icon is scaled in the y-dimension to fit the height of the text."
+          "doc": "图标将在y维度上缩放以适合文本的高度。"
         },
         "both": {
-          "doc": "The icon is scaled in both x- and y-dimensions."
+          "doc": "图标将在x和y维度上都进行缩放。"
         }
       },
       "default": "none",
-      "doc": "Scales the icon to fit around the associated text.",
+      "doc": "缩放图标以适合相关文本。",
       "requires": [
         "icon-image",
         "text-field"
@@ -1146,7 +1146,7 @@
         0
       ],
       "units": "pixels",
-      "doc": "Size of the additional area added to dimensions determined by `icon-text-fit`, in clockwise order: top, right, bottom, left.",
+      "doc": "添加到纬度上附加区域的大小是由 `icon-text-fit`决定的，按顺时针顺序：顶部，右侧，底部，左侧。",
       "requires": [
         "icon-image",
         "text-field",
@@ -1177,7 +1177,7 @@
     },
     "icon-image": {
       "type": "string",
-      "doc": "Name of image in sprite to use for drawing an image background.",
+      "doc": "sprite 中用于绘制图像背景的图像名称.",
       "tokens": true,
       "sdk-support": {
         "basic functionality": {
@@ -1207,7 +1207,7 @@
       "default": 0,
       "period": 360,
       "units": "degrees",
-      "doc": "Rotates the icon clockwise.",
+      "doc": "顺时针旋转图标。",
       "requires": [
         "icon-image"
       ],
@@ -1239,7 +1239,7 @@
       "default": 2,
       "minimum": 0,
       "units": "pixels",
-      "doc": "Size of the additional area around the icon bounding box used for detecting symbol collisions.",
+      "doc": "用于检测符号冲突的图标边界框周围的附加区域的大小。",
       "requires": [
         "icon-image"
       ],
@@ -1263,7 +1263,7 @@
     "icon-keep-upright": {
       "type": "boolean",
       "default": false,
-      "doc": "If true, the icon may be flipped to prevent it from being rendered upside-down.",
+      "doc": "如果为true，则可以翻转图标以防止其出现倒置现象。",
       "requires": [
         "icon-image",
         {
@@ -1301,7 +1301,7 @@
         0,
         0
       ],
-      "doc": "Offset distance of icon from its anchor. Positive values indicate right and down, while negative values indicate left and up. Each component is multiplied by the value of `icon-size` to obtain the final offset in pixels. When combined with `icon-rotate` the offset will be as if the rotated direction was up.",
+      "doc": "图标与其锚点的偏移距离。正值表示向右和向下，而负值表示向左和向上。 每个组件乘`icon-size`的值以获得最终的偏移量(以像素为单位)。和`icon-rotate`结合使用，偏移量将和旋转方向保持一致。",
       "requires": [
         "icon-image"
       ],
@@ -1332,35 +1332,35 @@
       "type": "enum",
       "values": {
         "center": {
-          "doc": "The center of the icon is placed closest to the anchor."
+          "doc": "图标的中心位于最靠近锚点的位置。"
         },
         "left": {
-          "doc": "The left side of the icon is placed closest to the anchor."
+          "doc": "图标的左侧放置在离锚点最近的位置。"
         },
         "right": {
-          "doc": "The right side of the icon is placed closest to the anchor."
+          "doc": "图标的右侧放置在离锚点最近的位置。"
         },
         "top": {
-          "doc": "The top of the icon is placed closest to the anchor."
+          "doc": "图标的顶部放置在离锚点最近的位置。"
         },
         "bottom": {
-          "doc": "The bottom of the icon is placed closest to the anchor."
+          "doc": "图标的底部放置在最靠近锚点的位置。"
         },
         "top-left": {
-          "doc": "The top left corner of the icon is placed closest to the anchor."
+          "doc": "图标的左上角放置在最靠近锚点的位置。"
         },
         "top-right": {
-          "doc": "The top right corner of the icon is placed closest to the anchor."
+          "doc": "图标的右上角放置在最靠近锚点的位置。"
         },
         "bottom-left": {
-          "doc": "The bottom left corner of the icon is placed closest to the anchor."
+          "doc": "图标的左下角放置在最靠近锚点的位置。"
         },
         "bottom-right": {
-          "doc": "The bottom right corner of the icon is placed closest to the anchor."
+          "doc": "图标的右下角放置在最靠近锚点的位置。"
         }
       },
       "default": "center",
-      "doc": "Part of the icon placed closest to the anchor.",
+      "doc": "图标最靠近锚点的部分。",
       "requires": [
         "icon-image"
       ],
@@ -1391,17 +1391,17 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The icon is aligned to the plane of the map."
+          "doc": "图标与地图平面对齐。"
         },
         "viewport": {
-          "doc": "The icon is aligned to the plane of the viewport."
+          "doc": "图标与视图平面对齐。"
         },
         "auto": {
-          "doc": "Automatically matches the value of `icon-rotation-alignment`."
+          "doc": "自动匹配`icon-rotation-alignment`的值。"
         }
       },
       "default": "auto",
-      "doc": "Orientation of icon when map is pitched.",
+      "doc": "地图倾斜时图标的方向。",
       "requires": [
         "icon-image"
       ],
@@ -1426,17 +1426,17 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "The text is aligned to the plane of the map."
+          "doc": "文本与地图平面对齐。"
         },
         "viewport": {
-          "doc": "The text is aligned to the plane of the viewport."
+          "doc": "文本与视图平面对齐。"
         },
         "auto": {
-          "doc": "Automatically matches the value of `text-rotation-alignment`."
+          "doc": "自动匹配`icon-rotation-alignment`的值。"
         }
       },
       "default": "auto",
-      "doc": "Orientation of text when map is pitched.",
+      "doc": "地图倾斜时文本的方向。",
       "requires": [
         "text-field"
       ],
@@ -1467,17 +1467,17 @@
       "type": "enum",
       "values": {
         "map": {
-          "doc": "When `symbol-placement` is set to `point`, aligns text east-west. When `symbol-placement` is set to `line` or `line-center`, aligns text x-axes with the line."
+          "doc": "当`symbol-placement` 的值被设置为`point`, 文本将和东西方向对齐. 当 `symbol-placement` 被设置为`line` 或者`line-center`, 文本将和线的x轴对齐。"
         },
         "viewport": {
-          "doc": "Produces glyphs whose x-axes are aligned with the x-axis of the viewport, regardless of the value of `symbol-placement`."
+          "doc": "不管`symbol-placement`的值是多少，生成图标的X轴将和视图的X轴对齐。"
         },
         "auto": {
-          "doc": "When `symbol-placement` is set to `point`, this is equivalent to `viewport`. When `symbol-placement` is set to `line` or `line-center`, this is equivalent to `map`."
+          "doc": "当`symbol-placement`的值被设置为`point`, 旋转行为将和`viewport`保持一致。当`symbol-placement` 被设置为`line`或者`line-center`, 将和`map`保持一致。"
         }
       },
       "default": "auto",
-      "doc": "In combination with `symbol-placement`, determines the rotation behavior of the individual glyphs forming the text.",
+      "doc": "和`symbol-placement`属性结合使用, 用来控制文本的旋转行为。",
       "requires": [
         "text-field"
       ],
@@ -1508,7 +1508,7 @@
       "type": "string",
       "default": "",
       "tokens": true,
-      "doc": "Value to use for a text label.",
+      "doc": "用于文本标签的值。如果提供了纯字符串，则将其视为具有默认/继承格式选项的格式。",
       "sdk-support": {
         "basic functionality": {
           "js": "0.10.0",
@@ -1539,7 +1539,7 @@
         "Open Sans Regular",
         "Arial Unicode MS Regular"
       ],
-      "doc": "Font stack to use for displaying text.",
+      "doc": "用于显示文本的font stack。",
       "requires": [
         "text-field"
       ],
@@ -1571,7 +1571,7 @@
       "default": 16,
       "minimum": 0,
       "units": "pixels",
-      "doc": "Font size.",
+      "doc": "字体的尺寸。",
       "requires": [
         "text-field"
       ],
@@ -1603,7 +1603,7 @@
       "default": 10,
       "minimum": 0,
       "units": "ems",
-      "doc": "The maximum line width for text wrapping.",
+      "doc": "文本换行的最大行宽。",
       "requires": [
         "text-field"
       ],
@@ -1634,7 +1634,7 @@
       "type": "number",
       "default": 1.2,
       "units": "ems",
-      "doc": "Text leading value for multi-line text.",
+      "doc": "多行文本的文本前导值。",
       "requires": [
         "text-field"
       ],
@@ -1659,7 +1659,7 @@
       "type": "number",
       "default": 0,
       "units": "ems",
-      "doc": "Text tracking amount.",
+      "doc": "文本的字间距。",
       "requires": [
         "text-field"
       ],
@@ -1690,17 +1690,17 @@
       "type": "enum",
       "values": {
         "left": {
-          "doc": "The text is aligned to the left."
+          "doc": "左对齐。"
         },
         "center": {
-          "doc": "The text is centered."
+          "doc": "居中"
         },
         "right": {
-          "doc": "The text is aligned to the right."
+          "doc": "右对齐"
         }
       },
       "default": "center",
-      "doc": "Text justification options.",
+      "doc": "文本对齐选项",
       "requires": [
         "text-field"
       ],
@@ -1731,35 +1731,35 @@
       "type": "enum",
       "values": {
         "center": {
-          "doc": "The center of the text is placed closest to the anchor."
+          "doc": "文本的中心位于最靠近锚点的位置。"
         },
         "left": {
-          "doc": "The left side of the text is placed closest to the anchor."
+          "doc": "文本的左侧位于最靠近锚点的位置。"
         },
         "right": {
-          "doc": "The right side of the text is placed closest to the anchor."
+          "doc": "文本的右侧位于最靠近锚点的位置。"
         },
         "top": {
-          "doc": "The top of the text is placed closest to the anchor."
+          "doc": "文本的顶部位于最靠近锚点的位置。"
         },
         "bottom": {
-          "doc": "The bottom of the text is placed closest to the anchor."
+          "doc": "文本的底部位于最靠近锚点的位置。"
         },
         "top-left": {
-          "doc": "The top left corner of the text is placed closest to the anchor."
+          "doc": "文本的左上角位于最靠近锚点的位置。"
         },
         "top-right": {
-          "doc": "The top right corner of the text is placed closest to the anchor."
+          "doc": "文本的右上角位于最靠近锚点的位置。"
         },
         "bottom-left": {
-          "doc": "The bottom left corner of the text is placed closest to the anchor."
+          "doc": "文本的左下角位于最靠近锚点的位置。"
         },
         "bottom-right": {
-          "doc": "The bottom right corner of the text is placed closest to the anchor."
+          "doc": "文本的右下角位于最靠近锚点的位置。"
         }
       },
       "default": "center",
-      "doc": "Part of the text placed closest to the anchor.",
+      "doc": "文本最靠经锚点的部分",
       "requires": [
         "text-field"
       ],
@@ -1790,7 +1790,7 @@
       "type": "number",
       "default": 45,
       "units": "degrees",
-      "doc": "Maximum angle change between adjacent characters.",
+      "doc": "相邻字符之间的最大角度变化。",
       "requires": [
         "text-field",
         {
